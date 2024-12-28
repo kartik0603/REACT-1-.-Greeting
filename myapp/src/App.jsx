@@ -2,6 +2,7 @@
 import React from 'react';
 import Greeting from './greeting';
 import UserProfileCard from './profile';
+import StyledComponent from './style';
 
 const App = () => {
   return (
@@ -26,6 +27,10 @@ const App = () => {
         location="Moon On Earth"
         profilePicture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMmCfH58_M_pkeqMkRvVYgf75ZBXcOZRT_Og&s"
       />
+
+      <StyledComponent isStyled={true}/>
+      <StyledComponent isStyled={false}/>
+
     </div>
   );
 };
